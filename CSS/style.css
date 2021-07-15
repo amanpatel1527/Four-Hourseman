@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.2s linear;
+}
+h1 {
+  font-size: 75px;
+  text-align: center;
+  color: #fff;
+  background: gray;
+}
+.box-container {
+  min-height: 100vh;
+  background: url(https://images.pexels.com/photos/5676478/pexels-photo-5676478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+.box-container .box {
+  height: 400px;
+  width: 280px;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px #000;
+  overflow: hidden;
+  margin: 20px 15px;
+}
+.box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale();
+}
+.box-container .box:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+.box-container .box .info {
+  text-align: center;
+  background: #fff;
+  position: relative;
+  bottom: 40px;
+}
+.box-container .box:hover .info {
+  bottom: 128px;
+}
+.box-container .box .info .title {
+  padding: 10px 0;
+  font-size: 20px;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.box-container .box .info .post {
+  font-size: 15px;
+  color: #999;
+}
+.box-container .box .info .share {
+  margin-top: 10px;
+  border-top: 1 px solid #444;
+}
+.box-container .box .info .share a {
+  font-size: 20px;
+  margin: 20px 10px;
+  text-decoration: none;
+  color: #333;
+}
+.box-container .box .info .share a:hover {
+  color: red;
+}
